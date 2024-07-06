@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string("series");
             $table->year("sale_date");
             $table->string("type");
-            $table->string("artist");
-            $table->string("writers");
             $table->timestamps();
         });
     }

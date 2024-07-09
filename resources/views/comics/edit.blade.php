@@ -11,8 +11,9 @@
         <div class="row">
             <div class="col-12">
 
-                <form>
-
+                <form method="POST" action="{{ route('comics.update', $comic->id) }}">
+                    @method('PUT') {{-- v.slide da 32 a 35 --}}
+                    @csrf
                     <div class="mb-3">
                         <label for="tit" class="form-label">title</label>
                         <input type="text" class="form-control" name="title" id="tit" required
